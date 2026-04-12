@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>9 on York — George, South Africa</title>
+  <link rel="icon" type="image/x-icon" href="favicon_strong_contrast.ico" />
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -285,7 +286,7 @@
     .about-image {
       border-radius: 12px;
       overflow: hidden;
-      aspect-ratio: 4/3;
+      aspect-ratio: 3/4;
       box-shadow: 0 20px 60px rgba(28,60,110,0.15);
     }
 
@@ -409,6 +410,48 @@
       font-family: 'Inter', sans-serif;
       font-size: 13px; color: var(--grey-text);
       margin-top: 4px;
+    }
+
+    .unit-furnish-toggle {
+      display: flex; align-items: center; gap: 10px;
+      margin-bottom: 18px;
+    }
+
+    .furnish-option {
+      font-family: 'Raleway', sans-serif;
+      font-size: 11px; font-weight: 700;
+      letter-spacing: 0.12em; text-transform: uppercase;
+      padding: 5px 14px; border-radius: 100px;
+      border: 1.5px solid var(--silver-lt);
+      color: var(--grey-text);
+      background: var(--off-white);
+    }
+
+    .furnish-option.active {
+      background: var(--navy);
+      border-color: var(--navy);
+      color: var(--white);
+    }
+
+    .furnish-divider {
+      font-family: 'Inter', sans-serif;
+      font-size: 12px; color: var(--grey-text);
+    }
+
+    .unit-deposit-note {
+      font-family: 'Inter', sans-serif;
+      font-size: 13px; color: var(--grey-text);
+      background: rgba(28,60,110,0.05);
+      border-left: 3px solid var(--navy);
+      border-radius: 0 6px 6px 0;
+      padding: 9px 14px;
+      margin-top: 10px; margin-bottom: 4px;
+      line-height: 1.5;
+    }
+
+    .unit-deposit-note strong {
+      color: var(--navy);
+      font-family: 'Raleway', sans-serif;
     }
 
     .unit-amenities {
@@ -600,8 +643,8 @@
       </div>
       <h1>Your Home<br />in <span class="accent">George</span>.</h1>
       <p>
-        Modern, comfortable apartments available for short stays or long-term living —
-        right in the heart of George, Western Cape.
+        Comfortable apartments set in a beautiful garden setting —
+        available for short stays or long-term living in the heart of George, Western Cape.
       </p>
       <div class="hero-buttons">
         <a href="#units" class="btn-primary">View Apartments</a>
@@ -639,7 +682,7 @@
           <img src="building.jpeg" alt="9 on York — George" />
         </div>
         <div>
-          <div class="section-tag">About 9 on York</div>
+          <div class="section-tag">About Us</div>
           <h2 class="section-title">A Place to Call Home</h2>
           <p class="section-sub">
             9 on York offers well-maintained bachelor and one-bedroom apartments in George, Western Cape.
@@ -654,8 +697,8 @@
             <div class="feature">
               <div class="feature-icon">🏠</div>
               <div class="feature-text">
-                <strong>Furnished Options</strong>
-                <span>Ask about availability</span>
+                <strong>Furnished &amp; Unfurnished</strong>
+                <span>Both options available</span>
               </div>
             </div>
             <div class="feature">
@@ -668,8 +711,8 @@
             <div class="feature">
               <div class="feature-icon">💧</div>
               <div class="feature-text">
-                <strong>Utilities Included</strong>
-                <span>Water, electricity &amp; more</span>
+                <strong>Utilities Excluded</strong>
+                <span>±R1,000/month, billed separately</span>
               </div>
             </div>
             <div class="feature">
@@ -677,6 +720,13 @@
               <div class="feature-text">
                 <strong>Parking Available</strong>
                 <span>Undercover, optional</span>
+              </div>
+            </div>
+            <div class="feature">
+              <div class="feature-icon">🔥</div>
+              <div class="feature-text">
+                <strong>Braai &amp; Garden Area</strong>
+                <span>Shared outdoor space</span>
               </div>
             </div>
           </div>
@@ -707,8 +757,14 @@
               A smart, self-contained studio ideal for a single person or couple.
               Compact and efficient — everything you need in one comfortable space.
             </p>
+            <div class="unit-furnish-toggle">
+              <span class="furnish-option active">Furnished</span>
+              <span class="furnish-divider">or</span>
+              <span class="furnish-option">Unfurnished</span>
+            </div>
             <div class="unit-price">R6,500 <span>/ month</span></div>
-            <div class="unit-price-sub">+ utilities ±R1,000–R1,500/month</div>
+            <div class="unit-price-sub">Utilities excluded — ±R1,000/month billed separately</div>
+            <div class="unit-deposit-note">🔒 Deposit payable upfront: <strong>R6,500</strong> (equal to one month's rent)</div>
             <div class="unit-amenities">
               <span class="amenity">Open-plan living</span>
               <span class="amenity">Kitchen area</span>
@@ -721,7 +777,7 @@
         <!-- One-bedroom -->
         <div class="unit-card">
           <div class="unit-card-img">
-            <img src="room-onebedroom.jpeg" alt="One-bedroom flat" />
+            <img src="Room17.jpeg" alt="One-bedroom flat" />
           </div>
           <div class="unit-card-body">
             <span class="unit-badge">One-Bedroom Flat</span>
@@ -730,8 +786,14 @@
               A separate bedroom for added privacy and comfort. Perfect for those
               who want a little more space to spread out and truly settle in.
             </p>
+            <div class="unit-furnish-toggle">
+              <span class="furnish-option active">Furnished</span>
+              <span class="furnish-divider">or</span>
+              <span class="furnish-option">Unfurnished</span>
+            </div>
             <div class="unit-price">R8,000 <span>/ month</span></div>
-            <div class="unit-price-sub">+ utilities ±R1,000–R1,500/month</div>
+            <div class="unit-price-sub">Utilities excluded — ±R1,000/month billed separately</div>
+            <div class="unit-deposit-note">🔒 Deposit payable upfront: <strong>R8,000</strong> (equal to one month's rent)</div>
             <div class="unit-amenities">
               <span class="amenity">Separate bedroom</span>
               <span class="amenity">Lounge</span>
@@ -746,7 +808,7 @@
 
       <div style="text-align:center; margin-top:48px; color:var(--grey-text); font-family:'Inter',sans-serif; font-size:14px;">
         Undercover parking available for <strong style="color:var(--navy); font-family:'Raleway',sans-serif;">R150/month</strong>
-        &nbsp;·&nbsp; Rental deposit required &nbsp;·&nbsp; Key &amp; remote deposit R300
+        &nbsp;·&nbsp; Key &amp; remote deposit R300 &nbsp;·&nbsp; All units available furnished or unfurnished
       </div>
     </div>
   </section>
@@ -759,8 +821,11 @@
           <div class="section-tag">Where to Find Us</div>
           <h2 class="section-title">Centrally Located in George</h2>
           <p class="section-sub">
-            9 on York sits on York Street in George, Western Cape —
+            9 on York sits on the corner of York Street and Rehoboth Street in George, Western Cape —
             within easy reach of shops, schools, hospitals, and the George Airport.
+          </p>
+          <p style="font-family:'Raleway',sans-serif; font-size:15px; font-weight:700; color:var(--navy); margin-bottom:24px;">
+            📍 Corner of York Street &amp; Rehoboth Street, George, 6530
           </p>
           <ul class="location-list">
             <li><span class="loc-icon">🏥</span> George Hospital — nearby</li>
@@ -772,7 +837,7 @@
         </div>
         <div class="location-map">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3316.0!2d22.459!3d-33.963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dde67b0!2sYork+St%2C+George%2C+6530!5e0!3m2!1sen!2sza!4v1"
+            src="https://maps.google.com/maps?q=Corner+of+York+Street+%26+Rehoboth+Street,+George,+6529,+South+Africa&z=17&output=embed"
             allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
             title="9 on York location map">
           </iframe>
